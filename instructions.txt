@@ -1,7 +1,17 @@
 1. git add a.txt
-2. git commit -m "an attribution"
+2. git commit -m "an attribution" -m是不需要開文字編輯器的意思
 3. git push (-u:指定預設) (origin master 是主要的那個)
 4. git remote add [name] [website]
 5. git reset -- "file" 取消add，可以用Vscode內建
 6. git checkout -- "file" 還原回上次commit的狀態
 7. git reset -- soft HEAD~1  回覆上次的commit ，一樣可以用vscode內建
+8. git checkout -b [branchname] 切換branch (注意位置！)
+9. git status 查詢現在git的狀態
+10. git branch 查詢有哪些branch
+11. git branch -a 查詢有哪些branch, 包含遠端
+12. git switch 切換branch
+13. git rebase [branchname] 將現在branch的commit接到最新的地方。會需要解決merge。在解完merge後就要用：
+14. git rebase --continue 繼續rebase
+15. git push -f 會動到歷史紀錄的push ex. rebase ，可以強制push ***千萬不要在主分支上做
+16. git branch -d [branchname] 刪除"本地的"branch
+17. git log 查看版本
