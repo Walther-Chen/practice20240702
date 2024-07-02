@@ -15,7 +15,13 @@
 15. git push -f 會動到歷史紀錄的push ex. rebase ，可以強制push ***千萬不要在主分支上做
 16. git branch -d [branchname] 刪除"本地的"branch
 17. git log 查看版本
+18. git branch -m [原名] [後名] 改branch名字
+19. git merge [欲匯入分支](但好像比較少用？)
+20. git checkout [hash] 暫時回到之前版本。hash 就是代表每個commit版本的數字和字母混合長串，用git log 查，也可以用vscode內建
+21. git log --oneline只看第一行主旨
+22. git reset --hard [hash]就真的回到以前的版本了
 
+ 
 git commit type(算是一種convention)
 feat  : 新增/修改功能 (feature)。
 fix   : 修補 bug (bug fix)。
